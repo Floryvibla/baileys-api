@@ -11,7 +11,9 @@
 		"format": "prettier . --write",
 		"postinstall": "prisma generate",
 		"changelog:preview": "conventional-changelog -p angular -u",
-		"changelog:last": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+		"changelog:last": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+		"db:migrate": "npx prisma migrate",
+		"db:push": "npx prisma db push"
 	},
 	"repository": {
 		"type": "git",
